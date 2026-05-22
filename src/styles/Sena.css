@@ -1,0 +1,317 @@
+/* ── Sena.css ── */
+
+.sena-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #e2e8f0;
+}
+
+/* ── Hero ── */
+.sena-hero {
+  margin-bottom: 2.5rem;
+}
+
+.sena-back {
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #94a3b8;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 1.25rem;
+  display: inline-block;
+  transition: color 0.15s;
+}
+.sena-back:hover {
+  color: #e2e8f0;
+}
+
+.sena-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  letter-spacing: 0.02em;
+  border: 1px solid rgba(52, 211, 153, 0.2);
+}
+
+.sena-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin: 0 0 0.5rem;
+  line-height: 1.2;
+}
+
+.sena-subtitle {
+  font-size: 15px;
+  color: #94a3b8;
+  margin: 0 0 1.5rem;
+  line-height: 1.65;
+  max-width: 560px;
+}
+
+/* ── Stats ── */
+.sena-stats {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.sena-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.sena-stat__num {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  line-height: 1;
+}
+
+.sena-stat__label {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 3px;
+}
+
+/* ── Filters ── */
+.sena-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 1.75rem;
+}
+
+.sena-chip {
+  font-size: 13px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: 1px solid #1e293b;
+  background: #1e293b;
+  color: #94a3b8;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-weight: 500;
+}
+
+.sena-chip:hover {
+  border-color: #334155;
+  color: #e2e8f0;
+}
+
+.sena-chip--active {
+  background: #059669;
+  color: #fff;
+  border-color: #059669;
+}
+
+/* ── Grid ── */
+.sena-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+/* ── Card base ── */
+.sena-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+  cursor: default;
+}
+
+.sena-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+  border-color: #475569;
+}
+
+.sena-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.sena-card__icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.sena-card__tag {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.02em;
+}
+
+.sena-card__title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #f1f5f9;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.sena-card__desc {
+  font-size: 13px;
+  color: #94a3b8;
+  margin: 0;
+  line-height: 1.55;
+  flex: 1;
+}
+
+.sena-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #334155;
+}
+
+.sena-card__hours {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.sena-card__cta {
+  background: none;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.15s;
+}
+.sena-card__cta:hover {
+  opacity: 0.7;
+}
+
+/* ── Card color variants ── */
+.card--blue .sena-card__icon  { background: rgba(59, 130, 246, 0.15); }
+.card--blue .sena-card__tag   { background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
+.card--blue .sena-card__cta   { color: #60a5fa; }
+
+.card--green .sena-card__icon { background: rgba(34, 197, 94, 0.15); }
+.card--green .sena-card__tag  { background: rgba(34, 197, 94, 0.15); color: #4ade80; }
+.card--green .sena-card__cta  { color: #4ade80; }
+
+.card--amber .sena-card__icon { background: rgba(245, 158, 11, 0.15); }
+.card--amber .sena-card__tag  { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
+.card--amber .sena-card__cta  { color: #fbbf24; }
+
+.card--purple .sena-card__icon { background: rgba(139, 92, 246, 0.15); }
+.card--purple .sena-card__tag  { background: rgba(139, 92, 246, 0.15); color: #a78bfa; }
+.card--purple .sena-card__cta  { color: #a78bfa; }
+
+.card--coral .sena-card__icon { background: rgba(239, 68, 68, 0.15); }
+.card--coral .sena-card__tag  { background: rgba(239, 68, 68, 0.15); color: #f87171; }
+.card--coral .sena-card__cta  { color: #f87171; }
+
+.card--teal .sena-card__icon  { background: rgba(20, 184, 166, 0.15); }
+.card--teal .sena-card__tag   { background: rgba(20, 184, 166, 0.15); color: #2dd4bf; }
+.card--teal .sena-card__cta   { color: #2dd4bf; }
+
+/* ── Divider ── */
+.sena-divider {
+  height: 1px;
+  background: #1e293b;
+  margin: 2.5rem 0;
+}
+
+/* ── CTA block ── */
+.sena-cta {
+  background: #1e293b;
+  border-radius: 14px;
+  padding: 1.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border: 1px solid #334155;
+}
+
+.sena-cta__title {
+  font-size: 17px;
+  font-weight: 600;
+  color: #f1f5f9;
+  margin: 0 0 4px;
+}
+
+.sena-cta__desc {
+  font-size: 13px;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.sena-cta__btn {
+  font-size: 14px;
+  font-weight: 600;
+  background: #25D366;
+  color: #fff;
+  border: none;
+  padding: 11px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.15s;
+  white-space: nowrap;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sena-cta__btn:hover {
+  background: #1ebe5d;
+}
+
+.sena-cta__btn-icon {
+  display: flex;
+  align-items: center;
+}
+
+/* ── Responsive ── */
+@media (max-width: 520px) {
+  .sena-title {
+    font-size: 1.5rem;
+  }
+
+  .sena-stats {
+    gap: 1.25rem;
+  }
+
+  .sena-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sena-cta {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sena-cta__btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
