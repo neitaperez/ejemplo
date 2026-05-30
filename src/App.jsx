@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { HashRouter, Routes, Route } from "react-router-dom"
 import Header from "./components/Header"
 import Profile from "./components/Profile"
 import Skills from "./components/Skills"
@@ -9,7 +9,7 @@ import Sena from "./pages/Sena"  // la crearás después
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
 
         <Route path="/" element={
@@ -26,7 +26,7 @@ function App() {
         <Route path="/sena" element={<Sena />} />
 
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
